@@ -1,0 +1,62 @@
+{
+  "name": "auth-backend",
+  "version": "1.0.0",
+  "description": "Production-grade authentication system backend",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev",
+    "prisma:studio": "prisma studio",
+    "test": "vitest",
+    "test:coverage": "vitest --coverage",
+    "lint": "eslint src --ext .ts",
+    "type-check": "tsc --noEmit"
+  },
+  "keywords": [
+    "authentication",
+    "koa",
+    "typescript",
+    "prisma"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@koa/cors": "^5.0.0",
+    "@prisma/client": "^5.8.0",
+    "@types/nodemailer": "^7.0.5",
+    "argon2": "^0.31.2",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.3.1",
+    "google-auth-library": "^10.5.0",
+    "ioredis": "^5.3.2",
+    "jsonwebtoken": "^9.0.2",
+    "koa": "^2.15.0",
+    "koa-body": "^7.0.1",
+    "koa-helmet": "^7.0.2",
+    "koa-router": "^12.0.1",
+    "koa-static": "^5.0.0",
+    "nodemailer": "^7.0.12",
+    "sharp": "^0.34.5",
+    "winston": "^3.11.0",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/jsonwebtoken": "^9.0.5",
+    "@types/koa": "^2.14.0",
+    "@types/koa__cors": "^5.0.1",
+    "@types/koa-mount": "^4.0.5",
+    "@types/koa-router": "^7.4.8",
+    "@types/koa-static": "^4.0.4",
+    "@types/node": "^20.10.6",
+    "@typescript-eslint/eslint-plugin": "^6.19.0",
+    "@typescript-eslint/parser": "^6.19.0",
+    "eslint": "^8.56.0",
+    "prisma": "^5.8.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3",
+    "vitest": "^1.1.0"
+  }
+}
